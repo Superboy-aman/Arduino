@@ -97,11 +97,11 @@ void loop() {
     sensor_group[2] = getSensorState(5, 7);
     if ((getSensorState(0, 7) == -1))
         stopBot();
-    else if ((sensor_group[0] == -1) && (sensor_group[1] >= 30 && sensor_group[1] <= 40) && (sensor_group[2] == -1))
+    else if ((sensor_group[0] == -1) && (sensor_group[1] != -1) && (sensor_group[2] == -1))
         walkForward(75, 75, 100);
-    else if((sensor_group[0] >= 0 && sensor_group[0] <= 30) && (sensor_group[1] >= 30 && sensor_group[1] <= 35) && (sensor_group[2]) == -1)
+    else if((sensor_group[0] != -1) && (sensor_group[2]) == -1)
         powerLeft(75, 75, 100);
-    else if((sensor_group[0] == -1) && (sensor_group[1] >= 35 && sensor_group[1] <= 40) && (sensor_group[2] >= 40 && sensor_group[2] <= 70))
+    else if((sensor_group[0] == -1) && (sensor_group[2] != -1))
         powerRight(75, 75, 100);
     else;
 }
