@@ -99,9 +99,9 @@ void loop() {
         stopBot();
     else if ((sensor_group[0] == -1) && (sensor_group[1] != -1) && (sensor_group[2] == -1))
         walkForward(75, 75, 100);
-    else if((sensor_group[0] != -1) && (sensor_group[2]) == -1)
+    else if((sensor_group[0] == -1) && (sensor_group[2]) != -1)
         powerLeft(75, 75, 100);
-    else if((sensor_group[0] == -1) && (sensor_group[2] != -1))
+    else if((sensor_group[0] != -1) && (sensor_group[2] == -1))
         powerRight(75, 75, 100);
     else;
 }
