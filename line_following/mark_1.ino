@@ -25,13 +25,13 @@ void printSensorArray() {
         Serial.print(x);
         hash[0][i] = x;
     }
-    Serial.print("    ");
-    Serial.print(getSensorState(0,2));
-    Serial.print("    ");
-    Serial.print(getSensorState(3,4));
-    Serial.print("    ");
-    Serial.print(getSensorState(5,7));
-    Serial.print("    ");
+    // Serial.print("    ");
+    // Serial.print(getSensorState(0,2));
+    // Serial.print("    ");
+    // Serial.print(getSensorState(3,4));
+    // Serial.print("    ");
+    // Serial.print(getSensorState(5,7));
+    // Serial.print("    ");
     Serial.print("\n");
 }
 
