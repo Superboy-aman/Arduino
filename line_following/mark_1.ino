@@ -61,20 +61,12 @@ void walkBackward(int power1, int power2, int interval) {
     delay(interval);
 }
 
-void leanLeft(int interval) {
-    analogWrite(intensity2, 0);
-}
-
 void powerLeft(int power1, int power2, int interval) {
     digitalWrite(dirn_bit1, HIGH);
     digitalWrite(dirn_bit2, LOW);
     analogWrite(intensity1, power1);
     analogWrite(intensity2, power2);
     delay(interval);
-}
-
-void leanRight(int interval) {
-    analogWrite(intensity1, 0);
 }
 
 void powerRight(int power1, int power2, int interval) {
